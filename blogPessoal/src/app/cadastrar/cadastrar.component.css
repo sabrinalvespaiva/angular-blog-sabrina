@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('https://media.istockphoto.com/photos/computer-coffee-mug-telephone-on-black-wood-table-sun-rising-picture-id500954400?k=20&m=500954400&s=170667a&w=0&h=3BcgShQo4z7PKQn2UWPwWo2UebGZT3xHKfRNwWuC6WI=');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

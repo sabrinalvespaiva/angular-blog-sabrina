@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('https://www.celos.com.br/site/wp-content/uploads/2019/09/coffee-1869820_960_720.jpg');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
