@@ -7,6 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "strictPropertyInitialization": false, //resolve problema das models sem contrutor, pois não solicita inicialização dos atributos
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
