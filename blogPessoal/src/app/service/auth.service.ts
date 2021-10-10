@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
@@ -37,6 +37,17 @@ export class AuthService {
 
     //retorna o ok true o false, depende se ele vai entrar na condição
     return ok
+  }
+
+  token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
+
+  atualizar(user: User): Observable<User>{
+    this.token = {
+      headers: new HttpHeaders().set('Authorization', environment.token)
+    }
+    return this.http.put<User>('https://blogpessoaldasasa.herokuapp.com/usuarios/atualizar', user, this.token)
   }
 
 }
